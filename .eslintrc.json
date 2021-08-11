@@ -1,0 +1,95 @@
+{
+  "root": true,
+  "env": {
+    "browser": true,
+    "commonjs": true,
+    "es2021": true,
+    "node": true
+  },
+  "extends": [
+    "airbnb-base",
+    "eslint:recommended",
+    "plugin:@typescript-eslint/eslint-recommended",
+    "plugin:@typescript-eslint/recommended"
+  ],
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "ecmaVersion": 12,
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "jsx": true,
+      "experimentalObjectRestSpread": true
+    },
+    "project": "./tsconfig.json"
+  },
+  "plugins": [
+    "@typescript-eslint"
+  ],
+  "rules": {
+    "@typescript-eslint/no-var-requires": 1,
+    "@typescript-eslint/no-extra-semi": 1,
+    "@typescript-eslint/no-unused-vars": 1,
+    "@typescript-eslint/ban-types": [
+      "error",
+      {
+        "types": {
+          "{}": false,
+          "Object": false,
+          "object": false
+        },
+        "extendDefaults": true
+      }
+    ],
+    "@typescript-eslint/no-inferrable-types": 1,
+    "@typescript-eslint/prefer-as-const": 1,
+    "no-prototype-builtins": 1,
+    "import/prefer-default-export": 0,
+    "global-require": 1,
+    "no-continue": 1,
+    "import/no-cycle": 0,
+    "max-len": [2, 150],
+    "consistent-return": 1,
+    "no-plusplus": [2, { "allowForLoopAfterthoughts": true }],
+    "indent": ["warn", 4],
+    "semi": ["error", "never"],
+    "@typescript-eslint/explicit-function-return-type": "off",
+    "@typescript-eslint/explicit-module-boundary-types": "off",
+    "import/extensions": [
+      "error",
+      "ignorePackages",
+      {
+        "js": "never",
+        "jsx": "never",
+        "ts": "never",
+        "tsx": "never"
+      }
+    ],
+    "object-curly-newline": ["error", { "multiline": true }],
+    "no-useless-constructor": "off",
+    "@typescript-eslint/no-useless-constructor": ["error"],
+    "no-useless-catch": "off",
+    "class-methods-use-this": "off",
+    "no-restricted-syntax": "off",
+    "no-use-before-define": "off",
+    "implicit-arrow-linebreak": ["error", "beside"],
+    "no-return-await": "off",
+    "quotes": ["error", "single", { "allowTemplateLiterals": true }],
+    "no-lone-blocks": "off",
+    "camelcase": ["error", {"ignoreDestructuring": true, "properties": "never"}],
+    "no-nested-ternary": "off",
+    "no-shadow": "off",
+    "@typescript-eslint/no-shadow": ["error"],
+    "no-await-in-loop": "off",
+    "max-classes-per-file": "off",
+    "new-cap": "off",
+    "no-console": "off",
+    "@typescript-eslint/no-explicit-any": "off",
+    "no-param-reassign": "off",
+    "lines-between-class-members": ["error", "always", { "exceptAfterSingleLine": true }]
+  },
+  "settings": {
+    "import/resolver": {
+      "typescript": {}
+    }
+  }
+}
