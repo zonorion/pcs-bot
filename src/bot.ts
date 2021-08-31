@@ -287,7 +287,6 @@ export class Bot implements OnModuleInit {
                 console.log(chalk.bold(chalk.red(`Pair Value: ${liquidValueF}`)))
 
                 if (liquidValueF * 1 > parseInt(minLiquid, 10)) {
-
                     if (type === CRYPTO_TYPE.BNB) {
                         setTimeout(() => this.buy(tokenOut, amountValue, type), 1)
                     } else {

@@ -1,5 +1,5 @@
 export const TOKEN_SNIPERS = {
-    '0xaF6Bd11A6F8f9c44b9D18f5FA116E403db599f8E':{
+    '0xD4DAD60c84Deb95799ed625ed35A1b75BDf5B2eB':{
         BNB: 0.5,
         BUSB: 200,
     },
